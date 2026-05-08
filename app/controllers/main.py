@@ -5,7 +5,7 @@ from pydantic import BaseModel
 
 app = FastAPI()
 
-# Cria as tabelas assim que a API inicia
+
 init_db()
 
 class LivroSchema(BaseModel):
