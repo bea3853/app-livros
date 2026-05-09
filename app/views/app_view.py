@@ -17,7 +17,7 @@ with st.sidebar:
         if titulo and autor:
             res = requests.post(API_URL, json={'titulo': titulo, 'autor':autor})
             if res.status_code == 200:
-                st.succes('Livro salvo')
+                st.success('Livro salvo')
             else:
                 st.error('Ocorreu um erro') 
 
